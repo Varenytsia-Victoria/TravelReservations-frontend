@@ -1,0 +1,35 @@
+<div class="location">
+<span></span>
+<input type="text">
+</div>
+
+<div class="dates">
+  <div class="check-in">
+    <span>Check-in</span>
+    <input type="date">
+  </div>
+  <div class="check-out">
+    <span>Check-out</span>
+    <input type="date">
+  </div>
+</div>
+
+<div class="persons" (click)="openDropdown()">
+  <span class="persons">ghjkl</span>
+  <!-- <span>{adult-num} Adults {child-num} Childrens</span> -->
+
+  <div class="person-num-choosing-block" *ngIf="isOpen">
+    <div class="adults-choosing">
+      <button class="minus">-</button>
+      <span>Adults</span>
+      <button class="plus">+</button>
+    </div>
+    <div class="child-choosing">
+      <button class="minus">-</button>
+      <span>Childrens</span>
+      <button class="plus">+</button>
+    </div>
+  </div>
+</div>
+
+<button class="find-hotels-btn">Find</button>

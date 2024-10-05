@@ -1,0 +1,15 @@
+<div class="tabs">
+  <button 
+    *ngFor="let tab of tabs" 
+    [ngClass]="{'active': activeTab === tab}" 
+    (click)="selectTab(tab)">
+    {{ tab.label }}
+  </button>
+</div>
+
+<ng-container [ngSwitch]="activeTab.id">
+  <app-hotel-form *ngSwitchCase="'hotels'"></app-hotel-form>
+  <app-flight-form *ngSwitchCase="'flights'"></app-flight-form>
+  <app-trips-form *ngSwitchCase="'trips'"></app-trips-form>
+  <app-car-rental-form *ngSwitchCase="'car-rental'"></app-car-rental-form>
+</ng-container>

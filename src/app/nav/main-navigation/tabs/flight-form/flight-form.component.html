@@ -1,0 +1,15 @@
+<div class="flight-options">
+ <form> <input type="radio" name="flight-option" id="one-way">
+  <label for="one-way">One way</label>
+ <input type="radio" name="flight-option" id="two-way">
+  <label for="two-way">Two way</label>
+</form>
+<div class="flight-type">
+  <span (click)="toggleDropdown()">Economy</span>і стрілочка
+
+  <div class="types" *ngIf="isOpen">
+    <span>1</span>
+    <span>2</span>
+  </div>
+</div>
+</div>

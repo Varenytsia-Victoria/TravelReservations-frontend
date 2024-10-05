@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { NavComponent } from './nav.component';
+import { HotelFormComponent } from './hotel-form.component';
 
-describe('NavComponent', () => {
-  let component: NavComponent;
-  let fixture: ComponentFixture<NavComponent>;
+describe('HotelFormComponent', () => {
+  let component: HotelFormComponent;
+  let fixture: ComponentFixture<HotelFormComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [NavComponent]
+      declarations: [HotelFormComponent]
     });
-    fixture = TestBed.createComponent(NavComponent);
+    fixture = TestBed.createComponent(HotelFormComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

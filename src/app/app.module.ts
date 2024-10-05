@@ -12,11 +12,16 @@ import { TripComponent } from './main/trip/trip.component';
 import { FlightComponent } from './main/flight/flight.component';
 import { CarHiveComponent } from './main/car-hive/car-hive.component';
 import { SortComponent } from './main/sort/sort.component';
-import { NavComponent } from './nav/nav.component';
+import { NavComponent } from './nav/home-navigation/nav.component';
 import { HotelCardComponent } from './main/hotel/hotel-card/hotel-card.component';
 import { TripCardComponent } from './main/trip/trip-card/trip-card.component';
 import { CarCardComponent } from './main/car-hive/car-card/car-card.component';
 import { FlightCardComponent } from './main/flight/flight-card/flight-card.component';
+import { MainNavigationComponent } from './nav/main-navigation/main-navigation.component';
+import { HotelFormComponent } from './nav/main-navigation/tabs/hotel-form/hotel-form.component';
+import { FlightFormComponent } from './nav/main-navigation/tabs/flight-form/flight-form.component';
+import { TripsFormComponent } from './nav/main-navigation/tabs/trips-form/trips-form.component';
+import { CarRentalFormComponent } from './nav/main-navigation/tabs/car-rental-form/car-rental-form.component';
 
 @NgModule({
   declarations: [
@@ -37,6 +42,11 @@ import { FlightCardComponent } from './main/flight/flight-card/flight-card.compo
     TripCardComponent,
     CarCardComponent,
     FlightCardComponent,
+    MainNavigationComponent,
+    HotelFormComponent,
+    FlightFormComponent,
+    TripsFormComponent,
+    CarRentalFormComponent,
   ],
   imports: [
     BrowserModule
